@@ -13,7 +13,7 @@ class BulletManager
 	vector<Bullet> bullets;
 	vector<Wall> walls;
 
-	void update_bullet(vector<Bullet>::iterator bullets_it, float delta_time);
+	void update_bullet(Bullet* bullet, float delta_time);
 
 public:
 	void add_bullet(float x_pos, float y_pos, float x_direction, float y_direction);
@@ -21,6 +21,7 @@ public:
 	void update(float delta_time);
 
 	const vector<Bullet>& get_bullets();
+	const vector<Wall>& get_walls();
 };
 
 #endif

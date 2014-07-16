@@ -54,6 +54,5 @@ Vec2 MathUtils::reflect(const Vec2& first, const Vec2& second)
 
 Vec2 MathUtils::normalize(const Vec2& vec)
 {
-	float inverse_sqrt = 1 / length(vec);
-	return vec * inverse_sqrt;
+	return vec / length(vec);
 }

@@ -37,6 +37,11 @@ inline const Vec2 operator*(const Vec2& lhs, float multiplier)
 	return Vec2(lhs.x * multiplier, lhs.y * multiplier);
 }
 
+inline const Vec2 operator/(const Vec2& lhs, float multiplier)
+{
+	return Vec2(lhs.x / multiplier, lhs.y / multiplier);
+}
+
 inline bool operator!=(const Vec2& lhs, const Vec2& rhs)
 {
 	return (lhs.x != rhs.x && lhs.y != rhs.y);
